@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.min.css" />
         <link rel="stylesheet" href="styles/main.min.css">
+        <script src="https://cdn.lordicon.com/lordicon.min.js"></script>
     </head>
     <body>
         <header class="header">
@@ -47,7 +48,13 @@
     <div class="container">
         <div id="services"  class="cards__heading">  
             <h2>Services</h2>
-           </div>
+               <lord-icon
+            src="https://cdn.lordicon.com/kezeezyg.min.json"
+            trigger="in"
+            delay="1500"
+            state="in-reveal"
+            style="width:100px;height:100px">
+        </lord-icon> </div>
         <div class="services__navigation">
             <a href="#nails">
              nails & pedicure
@@ -137,9 +144,11 @@
     </div>
 </div>
         </main>
-        
         <script src="https://unpkg.com/aos@next/dist/aos.min.js"></script>
         <script>
           AOS.init();
         </script>
     </body>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>

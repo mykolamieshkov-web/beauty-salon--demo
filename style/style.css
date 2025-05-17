@@ -1,6 +1,6 @@
 :root {
-  --container-max-width: 0px;
-  --margin-y: 0px;
+  --container-max-width: 1200px;
+  --margin-y: 45px;
   --rich-black: #333333;
   --accent-color: #069978;
   --hover-color: #0edfb2;
@@ -53,6 +53,7 @@ ul, li {
   height: auto;
   margin: 0 auto;
   padding-inline: 8px;
+  display: block;
 }
 @media (max-width: 992px) {
   [class*=__wrapper] {
@@ -199,6 +200,9 @@ body, html {
   .header__nav.active {
     display: block;
     opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 12px;
+    border: none;
   }
   .header__nav.active .header__item {
     opacity: 1;
@@ -219,8 +223,10 @@ body, html {
 }
 .header__list {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   list-style: none;
-  gap: 2rem;
+  gap: 32px;
 }
 @media (max-width: 768px) {
   .header__list {
@@ -240,6 +246,8 @@ body, html {
 .header__link {
   color: var(--rich-black);
   transition: all 0.6s ease-in;
+  display: flex;
+  align-items: center;
 }
 @media (hover: hover) {
   .header__link:hover {
@@ -261,13 +269,19 @@ body, html {
   width: 100%;
   height: auto;
   margin-top: 16px;
-  opacity: 0.6;
+  opacity: 0.8;
   position: fixed;
   bottom: 0;
   left: 0;
 }
 .footer__content {
+  width: 100%;
+  height: inherit;
   display: flex;
+  gap: 8%;
   justify-content: space-between;
   align-items: center;
+}
+.footer p {
+  text-wrap: nowrap;
 }/*# sourceMappingURL=style.css.map */

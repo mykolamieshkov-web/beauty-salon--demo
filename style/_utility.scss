@@ -1,17 +1,8 @@
 // подключаем семейство шрифтов для заговков: 
-@font-face {
-     font-family: "Poppins", sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    font-style: normal;
-    font-weight: 400 900;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 // семейство шрифтов для тела: 
-@font-face {
-    font-family:"Baskervville", serif; 
-    src: url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-    font-style: normal;
-    font-weight: 400 900;
-}
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 
 // пишем ограничивающий контейнер: 
 [class*="__wrapper"] { 
@@ -62,6 +53,9 @@ h4 {
 p {
     font-size: clamp(16px, 1.25vw, 18px);
     line-height: calc(24 / 18 * 100%);
+    text-wrap: balance;
+    max-width: 96%;
+    min-height: 24px;
 }
 a {
     font-size: clamp(18px, 1.3vw, 20px);
@@ -92,4 +86,62 @@ body, html {
     overflow-x: hidden;
     font-family:"Baskervville", serif; 
     text-align: left;
+}
+.btn {
+    max-width: 345px;
+    min-height: 48px;
+    padding: 8px 16px;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  border-radius: 36px;
+  letter-spacing: 0.6px;
+  background-color: var(--accent-color);
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  @include hover {
+     transform: translateY(-2px); /* лёгкий подъём */
+     background-color: var(--hover-color);
+  }
+}
+.button-sm {
+    max-width: 210px;
+    width: 210px;
+    min-height: 48px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #f1f1f1;
+    letter-spacing: 0.2px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+      transition: background-color 0.4s ease, transform 0.2s ease;
+  @include hover {
+     transform: translateY(-2px); /* лёгкий подъём */
+     background-color: var(--hover-color);
+  }
+
+}
+.button-sm--transparent {
+       max-width: 210px;
+       width: 210px;
+    min-height: 48px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--rich-black);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    letter-spacing: 0.2px;
+    background-color: transparent;
+      transition: background-color 0.4s ease, transform 0.2s ease;
+  @include hover {
+     transform: translateY(-2px); /* лёгкий подъём */
+     background-color: var(--hover-color);
+  }
 }

@@ -1,0 +1,82 @@
+.hero-section {
+width: 100%;
+height: auto;
+margin-block: var(--margin-y);
+
+		&__content {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+            @include tablet-b {
+                flex-flow: column wrap;
+                justify-content: center;
+            }
+		}
+}
+.hero {
+   
+
+		&__text {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-flow: column nowrap;
+            row-gap: 18px;
+		}
+
+		&__text--titile {
+            text-align: left;
+		}
+
+		&__text--subtitle {
+            width: 325px;
+            height: fit-content;
+		}
+
+		&__text--cta {
+            margin-bottom: 12px;
+		}
+
+		&__decoration {
+            display: flex;
+            flex-flow: column nowrap;
+            row-gap: 32px;
+            width: 48%;
+            height: auto;
+            padding-inline: 12px;
+            @include tablet {
+                justify-content: center;
+                align-items: center;
+            }
+             img {
+        border-radius: 16px;
+        border: none;
+    }
+		}
+
+		&__decoration--top {
+            width: 380px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+		}
+
+		&__decoration--row {
+            width:calc(330px + 330px);
+            height: 180px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+            @include tablet {
+                width: calc(205px + 205px); // уменьшаю размеры по золотому сечению на 1.618
+                gap: 12px;
+                padding-inline: 6px;
+            }
+		}
+}
+// ------------------------------------------------------------------------------------

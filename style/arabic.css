@@ -21,7 +21,7 @@ a{font-size:clamp(18px,1.3vw,20px);line-height:135%}
 .button-sm{font-size:clamp(14px,1.2vw,16px);line-height:66.6666666667%}
 .button-lg{font-size:clamp(18px,1.3vw,20px);line-height:135%}
 li{font-size:clamp(16px,1.25vw,18px);line-height:133.3333333333%}
-body,html{width:100%;height:auto;min-height:auto;scroll-behavior:smooth;overflow-x:hidden;font-family:"Baskervville",serif;text-align:left}
+body,html{width:100%;height:auto;min-height:auto;scroll-behavior:smooth;overflow-x:hidden;font-family:"Baskervville",serif;text-align:right;   direction: rtl;}
 .btn{max-width:345px;min-height:48px;padding:8px 16px;display:flex;align-items:center;justify-content:center;font-weight:600;color:white;border-radius:36px;letter-spacing:.6px;background-color:var(--accent-color);transition:background-color .4s ease,transform .2s ease}
 @media(hover:hover){.btn:hover{transform:translateY(-2px);background-color:var(--hover-color)}}
 @media(hover:none){.btn:active{transform:translateY(-2px);background-color:var(--hover-color)}}

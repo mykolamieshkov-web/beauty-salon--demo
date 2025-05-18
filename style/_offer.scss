@@ -1,0 +1,39 @@
+.offer {
+    width: 100%;
+    height: auto;
+    margin-block: var(--margin-y);
+    padding-inline: 16px;
+
+	
+		&__content {
+            display: flex;
+            flex-flow: column nowrap;
+            row-gap: 16px;
+            justify-content: center;
+            align-items: center;
+		}
+
+		&__heading {
+            width: 100%;
+            height: auto;
+              display: flex;
+            flex-flow: column nowrap;
+            row-gap: 32px;
+            justify-content: center;
+            align-items: center;
+		}
+
+		&__cta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-flow: row nowrap;
+            gap: 8px;
+            margin-block: 10px;
+            @include mobile-s {
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+		}
+}
+
